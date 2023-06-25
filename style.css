@@ -1,0 +1,114 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    height: 100vh; 
+    background-image: radial-gradient(circle at -14.09% 20.12%,
+     #ff60ac 0,#ff55b4 12.5%, #ff4bb9 25%,
+     #ff43b9 37.5%,#f23cb5 50%, #ce37ae 62.5%,
+     #ae34a7 75%,#9032a1 87.5%, #74329c 100%);
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+}
+
+.cabeçalho{
+margin-top: 0;
+padding: 20px 30px;    
+border: 30px 40px;
+color:rgb(243, 237, 243)
+
+}
+
+.container{
+    border: 2px solid #ffff;
+    padding: 30px 40px;
+    width: 40%;
+    min-width: 500px;
+}
+
+.new-task-container{
+    background-color: #ffff;
+    padding: 30px 20px;
+    border-radius: 5px;
+    box-shadow:0 15px 30px rgb(0, 0, 0, 0.3);
+    display: flex;
+}
+
+.new-task-container input{
+    flex: 3;
+    font-size: 1rem;
+    border: 3px solid rgb(245, 244, 244);
+    border-radius: 7px;
+    padding: 12px; 
+    font-weight: 500;
+}
+
+.new-task-container input:focus{ 
+    outline: none;
+    border-color: #af1b9b;
+}
+
+.new-task-button {
+    flex: 1;
+    border-radius: 7px;
+    font-weight: 500;
+    height: 100%;
+    font-size: 1rem;
+    border: none;
+    background-color: #af1b9b;
+    color:rgb(243, 237, 243);
+    padding: 13px;
+    margin-left: 12px;
+    cursor:pointer
+}
+
+.tasks-container{
+    background-color: white;
+    padding: 30px 20px;
+    margin-top: 50px;
+    border-radius: 12px;
+    box-shadow: 0 15px 30px rgb(0, 0, 0, 0.3);
+    width: 100%;
+
+}
+
+.task-item{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 7px;
+    margin-top: 7px;
+}
+
+.task-item i{
+    background-color: #af1b9b;
+    color:aliceblue;
+    padding: 13px;
+    border-radius: 7px;
+    
+}
+
+.task-item i:hover{
+    cursor: pointer;
+}
+
+
+/*javascripstyle*/
+
+.error {
+    border: 2px solid red !important;   
+}
+
+.error::placeholder {
+    color: red;
+}
+
+.completed {
+    text-decoration: line-through;
+}
